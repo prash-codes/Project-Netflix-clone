@@ -103,11 +103,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: max-content;
   }
   
   .hero__title {
-    font-weight: 600;
+    font-weight: 900;
     font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   .hero__subtitle,
@@ -132,8 +134,9 @@
     position: absolute;
     top: 28%;
     left: 2%;
-    color: rgb(153, 149, 149);
+    color: rgb(255, 255, 255);
     transition: 0.5s;
+    
   }
   
   .email__form__container {
@@ -142,13 +145,16 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    
   }
   
   .form__container {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 90%;
     height: 50px;
     position: relative;
+    border-color: black;
+    border-width: 2px;    
   }
   
   .email__input:focus + .email__label {
@@ -157,7 +163,7 @@
   }
   
   .email__input:not(:placeholder-shown).email__input:not(:focus) + .email__label {
-    top: 0.2rem;
+    top: 0.5rem;
     font-size: 10px;
   }
   
