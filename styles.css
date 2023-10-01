@@ -63,7 +63,7 @@
     border: 1px solid #ffffff;
     color: white;
     padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    border-radius: 5px;
   }
   
   .navbar__nav__items {
@@ -130,9 +130,9 @@
     padding-left: 7px;
   }
   .email__label {
-    color: black;
+    color: rgb(255, 255, 255);
     position: absolute;
-    top: 28%;
+    top: 30%;
     left: 2%;
     color: rgb(255, 255, 255);
     transition: 0.5s;
@@ -149,26 +149,34 @@
   }
   
   .form__container {
-    background-color: white;
+    background-color: transparent;
+    border-style: ridge;  
+    border-radius: 5px;  
     width: 90%;
     height: 50px;
     position: relative;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
     border-width: 2px;    
   }
   
   .email__input:focus + .email__label {
     top: 0.2rem;
     font-size: 10px;
+    color: white;
+
   }
   
   .email__input:not(:placeholder-shown).email__input:not(:focus) + .email__label {
-    top: 0.5rem;
-    font-size: 10px;
+    top: 0.2rem;
+    font-size: 15px;
+    
   }
   
   .email__input:focus-visible {
     outline: none;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: large;
   }
   
   .primary__button {
